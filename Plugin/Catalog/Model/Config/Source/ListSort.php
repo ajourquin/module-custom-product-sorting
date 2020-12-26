@@ -1,9 +1,11 @@
-<?php declare(strict_types = 1);
+<?php
 
 /**
- * @author    Aurélien Jourquin <aurelien@growzup.com>
- * @link      http://www.ajourquin.com
+ * @author Aurélien Jourquin <aurelien@growzup.com>
+ * @link http://www.ajourquin.com
  */
+
+declare(strict_types=1);
 
 namespace Ajourquin\CustomProductSorting\Plugin\Catalog\Model\Config\Source;
 
@@ -18,7 +20,7 @@ class ListSort
      */
     public function afterToOptionArray(MagentoListSort $subject, array $result): array
     {
-        \array_push($result, ['label' => __('Custom Value'), 'value' => 'custom_value']);
+        \array_push($result, ['label' => \__('Custom Value'), 'value' => 'custom_value']);
 
         return $result;
     }

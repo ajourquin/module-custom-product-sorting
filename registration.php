@@ -1,9 +1,10 @@
-<?php declare(strict_types = 1);
-
+<?php
 /**
- * @author    Aurélien Jourquin <aurelien@growzup.com>
- * @link      http://www.ajourquin.com
+ * @author Aurélien Jourquin <aurelien@growzup.com>
+ * @link http://www.ajourquin.com
  */
+
+declare(strict_types=1);
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,

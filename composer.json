@@ -1,7 +1,7 @@
 {
     "name": "ajourquin/module-custom-product-sorting",
     "description": "Create a custom product sorting",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "type": "magento2-module",
     "license": "OSL-3.0",
     "authors": [
@@ -17,9 +17,6 @@
         "sorting",
         "custom"
     ],
-    "require": {
-        "magento/module-catalog": "103.0.*"
-    },
     "autoload": {
         "files": [
             "registration.php"

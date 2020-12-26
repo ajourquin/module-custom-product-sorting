@@ -1,9 +1,11 @@
-<?php declare(strict_types = 1);
+<?php
 
 /**
- * @author    Aurélien Jourquin <aurelien@growzup.com>
- * @link      http://www.ajourquin.com
+ * @author Aurélien Jourquin <aurelien@growzup.com>
+ * @link http://www.ajourquin.com
  */
+
+declare(strict_types=1);
 
 namespace Ajourquin\CustomProductSorting\Plugin\Catalog\Model;
 
@@ -18,7 +20,7 @@ class Config
      */
     public function afterGetAttributeUsedForSortByArray(MagentoConfig $subject, array $result): array
     {
-        $result['custom_value'] = __('Custom value');
+        $result['custom_value'] = \__('Custom value');
 
         return $result;
     }

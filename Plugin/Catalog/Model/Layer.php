@@ -1,9 +1,11 @@
-<?php declare(strict_types = 1);
+<?php
 
 /**
- * @author    Aurélien Jourquin <aurelien@growzup.com>
- * @link      http://www.ajourquin.com
+ * @author Aurélien Jourquin <aurelien@growzup.com>
+ * @link http://www.ajourquin.com
  */
+
+declare(strict_types=1);
 
 namespace Ajourquin\CustomProductSorting\Plugin\Catalog\Model;
 
@@ -32,7 +34,7 @@ class Layer
      * @param ProductCollection $collection
      * @return array
      */
-    public function beforePrepareProductCollection(MagentoLayer $subject,  ProductCollection $collection): array
+    public function beforePrepareProductCollection(MagentoLayer $subject, ProductCollection $collection): array
     {
         $currentOrder = $this->toolbar->getCurrentOrder();
 
